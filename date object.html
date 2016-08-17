@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+</head>
+
+<body>
+
+<script type="text/javascript">
+	
+function printTime(){
+	var now = new Date();
+	var hr = now.getHours();
+	var min = now.getMinutes();
+	var sec = now.getSeconds();
+	
+	document.write(hr+":"+min+":"+sec+"<br />");
+}
+
+setInterval("printTime()", 1000);
+	
+</script>
+
+</body>
+</html>

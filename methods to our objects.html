@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+<script type="text/javascript">
+	function people(name, age){
+	
+		this.name = name;
+		this.age = age;
+		this.yearRetire = yearsLeft;		//dont add () 
+	}
+	
+	function yearsLeft(){
+		var num = 65 - this.age;
+		return num;
+	}
+	
+	var natalie = new people("natalie",42);
+	var bucky = new people("bucky",42);
+</script>
+</head>
+
+<body>
+<script type="text/javascript">
+	document.write(bucky.yearRetire())
+
+</script>
+</body>
+</html>
